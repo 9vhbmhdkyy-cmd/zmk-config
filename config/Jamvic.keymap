@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+/ {
+	keymap0: keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+
+			bindings = <
+                // Row 0 (P0.13) - 19列
+                &kp PAUSEBREAK      &kp Q        &kp W        &kp E        &kp R        &kp U        &kp T        &kp O        &kp P        &kp SCROLLLOCK   &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp NONE     
+                // Row 1 (P0.22) - 19列
+                &kp NONE            &kp TAB      &kp CAPSLOCK &kp F3       &kp Y        &kp I        &kp F7       &kp LBRACKET &kp RBRACKET &kp NONE         &kp BACKSPACE &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp LSHIFT   &kp LWIN     &kp NONE     &kp NONE     
+                // Row 2 (P0.24) - 19列
+                &kp NONE            &kp A        &kp S        &kp D        &kp F        &kp J        &kp K        &kp L        &kp SEMICOLON&kp NONE         &kp BACKSLASH &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp RSHIFT   &kp NONE     &kp RWIN     &kp NONE     
+                // Row 3 (P1.00) - 19列
+                &kp NONE            &kp ESC      &kp NONE     &kp F4       &kp G        &kp H        &kp F6       &kp NONE     &kp QUOTE    &kp LALT         &kp F11      &kp SPACE    &kp NONE     &kp NONE     &kp UP       &kp VOLDOWN  &kp NONE     &kp NONE     &kp NONE     
+                // Row 4 (P1.02) - 19列
+                &kp LCTRL           &kp Z        &kp X        &kp C        &kp V        &kp M        &kp COMMA    &kp DOT      &kp NONE     &kp NONE         &kp ENTER    &kp NONE     &kp NONE     &kp NONE     &kp NONE     &kp VOLUP    &kp NONE     &kp NONE     &kp NONE     
+                // Row 5 (P1.04) - 19列
+                &kp NONE            &kp NONE     &kp NONE     &kp NONE     &kp B        &kp N        &kp NONE     &kp MENU     &kp SLASH    &kp RALT         &kp F12      &kp DOWN     &kp RIGHT    &kp NONE     &kp LEFT     &kp NONE     &kp NONE     &kp NONE     &kp NONE     
+                // Row 6 (P0.09) - 19列
+                &kp LCTRL           &kp GRAVE    &kp F1       &kp F2       &kp KP_5     &kp KP_6     &kp KP_PLUS  &kp F8       &kp KP_MINUS &kp NONE         &kp F9       &kp DELETE   &kp INSERT   &kp PAGEUP   &kp HOME     &kp NONE     &kp MUTE     &kp NONE     &kp RWIN     
+                // Row 7 (P1.06) - 19列
+                &kp F5              &kp KP_1     &kp KP_2     &kp KP_3     &kp KP_4     &kp KP_7     &kp KP_8     &kp KP_9     &kp KP_0     &kp PRINTSCREEN  &kp F10      &kp NONE     &kp NONE     &kp PAGEDOWN &kp END      &kp NONE     &kp NONE     &kp NONE     &kp NONE     
+            >;
+		};
+
+
+	};
+};
+
+
+
+
+
+
