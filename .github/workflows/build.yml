@@ -12,7 +12,7 @@ jobs:
       matrix:
         include:
           - board: nice_nano_v2
-            shield: mykbd
+            shield: Jamvic
 
     steps:
       - name: Checkout
