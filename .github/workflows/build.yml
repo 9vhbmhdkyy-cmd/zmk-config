@@ -1,7 +1,7 @@
 name: Build ZMK firmware
 
 on:
-  push:
+  push:aa
   workflow_dispatch:
 
 jobs:
