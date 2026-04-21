@@ -1,22 +1,13 @@
 name: Build ZMK firmware
 
 on:
-  push:aa
+  push:
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
 
-    strategy:
-      matrix:
-        include:
-          - board: nice_nano_v2
-            shield: Jamvic
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Build firmware
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      board: nice_nano_v2
+      shield: jamvic
